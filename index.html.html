@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitClub - Best Fitness in Town</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        body {
+            background-color: #111;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .join-now-btn {
+            background-color: #f4a261;
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .hero {
+            display: flex;
+            padding: 5% 5%;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .hero-content {
+            flex: 1;
+        }
+
+        .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .hero-image img {
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .best-fitness {
+            color: #f4a261;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-text {
+            color: #888;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            line-height: 1.6;
+        }
+
+        .programs {
+            padding: 5% 5%;
+        }
+
+        .program-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .program-card {
+            background-color: #222;
+            padding: 1.5rem;
+            border-radius: 10px;
+        }
+
+        .program-card i {
+            background-color: #f4a261;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+
+        .pricing {
+            padding: 5% 5%;
+            text-align: center;
+        }
+
+        .pricing-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .pricing-card {
+            background-color: #222;
+            padding: 2rem;
+            border-radius: 10px;
+        }
+
+        .price {
+            font-size: 2.5rem;
+            margin: 1rem 0;
+        }
+
+        .features {
+            text-align: left;
+            margin: 2rem 0;
+        }
+
+        .features li {
+            margin: 0.5rem 0;
+            list-style: none;
+        }
+
+        .features li::before {
+            content: "✓";
+            color: #f4a261;
+            margin-right: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            💪 FITCLUB
+        </div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#program">Program</a>
+            <a href="#service">Service</a>
+            <a href="#about">About</a>
+            <a href="#community">Community</a>
+        </div>
+        <button class="join-now-btn">Join Now</button>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <p class="best-fitness">BEST FITNESS IN THE TOWN</p>
+            <h1>MAKE YOUR<br>BODY SHAPE</h1>
+            <p class="hero-text">Unleash your potential and embark on a journey towards a stronger, fitter, and more confident you. Sign up for 'Make Your Body Shape' now and witness the incredible transformation your body is capable of!</p>
+            <button class="join-now-btn">Get Started</button>
+        </div>
+        <div class="hero-image">
+            <img src="/api/placeholder/400/400" alt="Fitness trainer">
+        </div>
+    </section>
+
+    <section class="programs">
+        <h2>EXPLORE OUR PROGRAM</h2>
+        <div class="program-cards">
+            <div class="program-card">
+                <i>💪</i>
+                <h3>Strength</h3>
+                <p>Embrace the essence of strength as we delve into its various dimensions physical, mental, and emotional.</p>
+            </div>
+            <div class="program-card">
+                <i>❤️</i>
+                <h3>Physical Fitness</h3>
+                <p>It encompasses a range of activities that improve health, strength, flexibility, and overall well-being.</p>
+            </div>
+            <div class="program-card">
+                <i>🏃</i>
+                <h3>Fat Loss</h3>
+                <p>Through a combination of workout routines and expert guidance, we'll empower you to reach your goals.</p>
+            </div>
+            <div class="program-card">
+                <i>💪</i>
+                <h3>Weight Gain</h3>
+                <p>Designed for individuals, our program offers an effective approach to gaining weight in a sustainable manner.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing">
+        <h2>OUR PRICING PLAN</h2>
+        <p>Our pricing plan comes with various membership tiers, each tailored to cater to different preferences and fitness aspirations.</p>
+        <div class="pricing-cards">
+            <div class="pricing-card">
+                <h3>Basic Plan</h3>
+                <div class="price">₹1999</div>
+                <ul class="features">
+                    <li>Smart workout plan</li>
+                    <li>At home workouts</li>
+                </ul>
+                <button class="join-now-btn">Join Now</button>
+            </div>
+            <div class="pricing-card">
+                <h3>Weekly Plan</h3>
+                <div class="price">₹3999</div>
+                <ul class="features">
+                    <li>PRO Gyms</li>
+                    <li>Smart workout plan</li>
+                    <li>At home workouts</li>
+                </ul>
+                <button class="join-now-btn">Join Now</button>
+            </div>
+            <div class="pricing-card">
+                <h3>Monthly Plan</h3>
+                <div class="price">₹5999</div>
+                <ul class="features">
+                    <li>ELITE Gyms & Classes</li>
+                    <li>PRO Gyms</li>
+                    <li>Smart workout plan</li>
+                    <li>At home workouts</li>
+                    <li>Personal Training</li>
+                </ul>
+                <button class="join-now-btn">Join Now</button>
+            </div>
+            
+        </div>
+        <footer style="background-color: #000; color: #fff; padding: 2rem 5%; text-align: center;">
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1.5rem;">
+                <div>
+                    <h3>FITCLUB</h3>
+                    <p>Take the first step towards a healthier, stronger you with our unbeatable pricing plans. Let's sweat, achieve, and conquer together!</p>
+                </div>
+                <div>
+                    <h4>Company</h4>
+                    <ul style="list-style: none; padding: 0; line-height: 1.8;">
+                        <li><a href="#" style="color: #fff; text-decoration: none;">Business</a></li>
+                        <li><a href="#" style="color: #fff; text-decoration: none;">Franchise</a></li>
+                        <li><a href="#" style="color: #fff; text-decoration: none;">Partnership</a></li>
+                        <li><a href="#" style="color: #fff; text-decoration: none;">Network</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>About Us</h4>
+                    <ul style="list-style: none; padding: 0; line-height: 1.8;">
+                        <li><a href="#" style="color: #fff; text-decoration: none;">Blogs</a></li>
+                        <li><a href="#" style="color: #fff; text-decoration: none;">Security</a></li>
+                        <li><a href="#" style="color: #fff; text-decoration: none;">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <ul style="list-style: none; padding: 0; line-height: 1.8;">
+                        <li><a href="#" style="color: #fff; text-decoration: none;">Contact Us</a></li>
+                        <li><a href="#" style="color: #fff; text-decoration: none;">Privacy Policy</a></li>
+                        <li><a href="#" style="color: #fff; text-decoration: none;">Terms & Conditions</a></li>
+                        <li><a href="#" style="color: #fff; text-decoration: none;">Fitclub Swags</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div style="margin-top: 2rem;">
+                <a href="#" style="color: #f4a261; text-decoration: none; margin: 0 1rem;">Instagram</a>
+                <a href="#" style="color: #f4a261; text-decoration: none; margin: 0 1rem;">Facebook</a>
+                <a href="#" style="color: #f4a261; text-decoration: none; margin: 0 1rem;">Twitter</a>
+            </div>
+        </footer>
+        
+        
+    </section>
+    
+
+</body>
+</html>
